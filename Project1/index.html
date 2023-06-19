@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>IT1love</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Программирование</h1>
+    <h3>как смысл жизни!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Менторство - лучший старт в IT!</h2>
+      <span>Мы выпускаем специалистов для компаний уровня Т1 - минимум.</span>
+    </div>
+    <div class="text">
+      <span>Пройдите обучение под пресмотром действительно великих людей, готовых поделится своим опытом именно с вами!
+      С нами работают:
+      <p>-Дмитрий Витальевич Скляров;</p>
+      <p>-Александр Александрович Степанов;</p>
+      <p>-Андрей Николаевич Терехов;</p>
+      <p>-Роман "Winderton" Зимин;</p>
+      <p></p>
+      Мы ждем тебя!</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>Высоты - только с нами.</h4>
+
+    <div class="img">
+      <img src="images/oxford.png" alt="">
+      <span>Обучение и практика в Оксфордском университете.</span>
+    </div>
+    <div class="img">
+      <img src="images/company.png" alt="">
+      <span>Отбор и стажировка в лучшие IT компании России.</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Оплата проходит по официальному договору.Вы можете подписать как очно, так и 
+      онлайн;Также можно оформить через ГОСУСЛУГИ.</p>
+      <span class="heading">Какие способы оплаты?</span>
+      <p>Наши услуги можно оплатить 4 способами:
+      -Оплата в нашем офисе;
+      -Оплата в офисе банка;
+      -Оплата с помощью криптовалюты;
+      -Оформление рассрочки в банке;</p>
+      <span class="heading">Меняется ли стоимость услуг?</span>
+      <p>Нет, вы оплачиваете фиксированную сумму в зависимости от выбранного тарифа.</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>В услуги сервиса входит:Обучение и практика под наставлением ментора, которого
+      вы сами выбираете, как и направление обучения.</p>
+      <span class="heading">Что будет в программе?</span>
+      <p>Мы имеем связь с 50+ ведущими IT компаниями, а также с Оксфордским университетом, куда мы отправляем на практику лидирующих студентов. 
+      Обучение нестандартное - вы будете решать кейсы и задачи от различных компаний, для 
+      практики на реальных задачах бизнеса. Также вы будете иметь связь с представителями этих компаний, для модуляции реальной работы, получения практических навыков использования технологий и опыта.</p>
+      <span class="heading">Соответствует ли ваша программа инновациям и скорости расширения IT?</span>
+      <p>Наша программа обучения постоянно корректируется, в силу внедрения новцых технологий. Наши студенты изучают новейшие инструменты решения бизнес задач.
+      Также, мы сами активно разрабатываем новые решения - инструменты, библиотеки, дополнения к фреймворкам и тп.</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть?</span>
+      <p>Мы гарантируем стажировку в Т1 компании по ходу прохождения менторства.
+      По окончанию обучения вы будете претендовать на вакансии Middle-Middle+ уровня.</p>
+      <span class="heading">Какие бонусы или средства поощерения?</span>
+      <p>Если студент преуспевает в обучении, он получает большее количество проектов и задач более высокого уровня, что позволяет заинтересовать HR-агентов крупных IT контор, с которыми мы также сотрудничаем.</p>
+      <span class="heading">А еще?</span>
+      <p>А еще, у нас есть таблица лидеров - преуспевающих студентов.
+      Сделано это специально, для отбора на получение гранта.
+      Грант в свою очередь, позволяет абсолютно бесплатно пройти полугодовое обучение в Оксфордском университете, под присмотром-международно известных специалистов.</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
